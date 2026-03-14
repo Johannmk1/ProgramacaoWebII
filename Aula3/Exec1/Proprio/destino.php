@@ -3,90 +3,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Resposta - Envio para destino.php</title>
-
 <style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#e8f4ff;
+        margin:40px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 
-body{
-    font-family: Arial, sans-serif;
-    background:#e8f4ff;
-    margin:40px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
+    h1{
+        margin-bottom:20px;
+        color:#1b4f72;
+    }
 
-h1{
-    margin-bottom:20px;
-    color:#1b4f72;
-}
+    .container{
+        background:#ffffff;
+        padding:25px;
+        width:420px;
+        border:1px solid #cfe6ff;
+        border-radius:20px;
+        box-shadow:0 0 10px rgba(0,0,0,0.08);
+    }
 
-.container{
-    background:#ffffff;
-    padding:25px;
-    width:420px;
-    border:1px solid #cfe6ff;
-    border-radius:20px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
-}
+    p{
+        margin:8px 0;
+    }
 
-p{
-    margin:8px 0;
-}
+    h2{
+        margin-top:30px;
+        color:#1b4f72;
+    }
 
-h2{
-    margin-top:30px;
-    color:#1b4f72;
-}
+    .table-wrapper{
+        width:520px;
+        display:flex;
+        justify-content:center;
+    }
 
-.table-wrapper{
-    width:520px;
-    display:flex;
-    justify-content:center;
-}
+    table{
+        border-collapse:collapse;
+        width:100%;
+        background:#ffffff;
+        border-radius:10px;
+        overflow:hidden;
+    }
 
-table{
-    border-collapse:collapse;
-    width:100%;
-    background:#ffffff;
-    border-radius:10px;
-    overflow:hidden;
-}
+    th, td{
+        border:1px solid #d6eaff;
+        padding:6px 8px;
+        text-align:left;
+        font-size:13px;
+    }
 
-th, td{
-    border:1px solid #d6eaff;
-    padding:6px 8px;
-    text-align:left;
-    font-size:13px;
-}
+    th{
+        background:#dff1ff;
+        color:#0d3c61;
+    }
 
-th{
-    background:#dff1ff;
-    color:#0d3c61;
-}
+    tr:nth-child(even){
+        background:#f3f9ff;
+    }
 
-tr:nth-child(even){
-    background:#f3f9ff;
-}
+    .back-link{
+        margin-top:20px;
+        display:inline-block;
+        text-decoration:none;
+        background:#dff1ff;
+        padding:8px 14px;
+        border:1px solid #b8dcff;
+        border-radius:10px;
+        color:#0d3c61;
+    }
 
-.back-link{
-    margin-top:20px;
-    display:inline-block;
-    text-decoration:none;
-    background:#dff1ff;
-    padding:8px 14px;
-    border:1px solid #b8dcff;
-    border-radius:10px;
-    color:#0d3c61;
-}
-
-.back-link:hover{
-    background:#cfe6ff;
-}
-
+    .back-link:hover{
+        background:#cfe6ff;
+    }
 </style>
-
 </head>
-
 <body>
 
 <h1>Resposta do Formulário</h1>

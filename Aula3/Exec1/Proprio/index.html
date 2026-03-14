@@ -4,81 +4,78 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Formulário - Envio para destino.php</title>
-
 <style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#e8f4ff;
+        margin:40px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 
-body{
-    font-family: Arial, sans-serif;
-    background:#e8f4ff;
-    margin:40px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
+    h1{
+        margin-bottom:20px;
+        color:#1b4f72;
+    }
 
-h1{
-    margin-bottom:20px;
-    color:#1b4f72;
-}
+    form{
+        background:#ffffff;
+        padding:20px;
+        width:320px;
+        border:1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-form{
-    background:#ffffff;
-    padding:20px;
-    width:320px;
-    border:1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    label{
+        display:block;
+        margin-bottom:5px;
+        font-weight:bold;
+    }
 
-label{
-    display:block;
-    margin-bottom:5px;
-    font-weight:bold;
-}
+    input{
+        width:100%;
+        padding:6px;
+        border:1px solid #ccc;
+        margin-bottom:12px;
+        box-sizing:border-box;
+        border-radius: 10px;
+        background-color: #a2c4f12f;
+    }
 
-input{
-    width:100%;
-    padding:6px;
-    border:1px solid #ccc;
-    margin-bottom:12px;
-    box-sizing:border-box;
-    border-radius: 10px;
-    background-color: #a2c4f12f;
-}
+    textarea{
+        width:100%;
+        padding:6px;
+        border:1px solid #ccc;
+        margin-bottom:12px;
+        box-sizing:border-box;
+        border-radius:10px;
+        background-color:#a2c4f12f;
+        resize:vertical;
+    }
 
-textarea{
-    width:100%;
-    padding:6px;
-    border:1px solid #ccc;
-    margin-bottom:12px;
-    box-sizing:border-box;
-    border-radius:10px;
-    background-color:#a2c4f12f;
-    resize:vertical;
-}
+    .botoes{
+        display:flex;
+        gap:10px;
+        margin-top:10px;
+        justify-content: center;
+        
+    }
 
-.botoes{
-    display:flex;
-    gap:10px;
-    margin-top:10px;
-    justify-content: center;
-    
-}
+    button{
+        display:inline-block;
+        text-decoration:none;
+        background:#dff1ff;
+        padding:8px 14px;
+        border:1px solid #b8dcff;
+        border-radius:10px;
+        color:#0d3c61;
+    }
 
-button{
-    display:inline-block;
-    text-decoration:none;
-    background:#dff1ff;
-    padding:8px 14px;
-    border:1px solid #b8dcff;
-    border-radius:10px;
-    color:#0d3c61;
-}
-
-button:hover{
-    background:#cfe6ff;
-}
-
+    button:hover{
+        background:#cfe6ff;
+    }
 </style>
 </head>
 <body>
@@ -103,8 +100,6 @@ button:hover{
 <button type="submit">Enviar POST</button>
 <button type="submit" formmethod="get" formaction="destino.php">Abrir como GET</button>
 </div>
-
 </form>
-
 </body>
 </html>
